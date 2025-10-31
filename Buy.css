@@ -1,0 +1,288 @@
+body{
+    background-image: url(photo_2025-01-28_14-28-09.jpg);
+    color: white;
+    text-align: center;
+    display: inline;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+#menu{
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+     margin-top: -9px;
+    margin-left: -9px;
+    margin-right: -9px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    display: flex;
+    z-index: 1;
+    height: 50px;
+    cursor: pointer;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 35px;
+    font-size: 20px;
+    display: inline-block;
+    
+}
+
+#r{
+    list-style-type: none;
+    margin-top: 12px;
+}
+
+#logo{
+    margin-top: 230px;
+}
+
+#l{
+    font-size: 125px;
+    line-height: 20px;
+    margin-bottom: 150px;
+ }
+
+ [class *="lo"]{
+    position: fixed;
+    bottom: 30px;
+    right: 8px;
+}
+
+[class *="log"]{
+
+    position: fixed;
+    bottom: 15px;
+    right: 9px;
+}
+
+[class *="logo"]{
+    position: fixed;
+    bottom: 0;
+    right: 8px;
+    
+}
+.About{
+    font-size: 23px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#service-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+#card1 ,#card2 ,#card3 ,#card4{
+    background-color: rgba(255, 255, 255, 0.493);
+    width: 280px;
+    height: 220px;
+    border-radius: 35px;
+    flex-wrap: wrap;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 6px 6px 70px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#card1:hover ,#card2:hover ,#card3:hover ,#card4:hover{
+    transform: translateY(-10px);
+    background-color: white;
+}
+
+.inf1 ,.inf2 ,.inf3 ,.inf4{
+color: black;
+margin: 0;
+font-size: 17px;
+}
+
+#Html ,#Css ,#js ,#Back-End {
+color: black;
+font-size: 55px;
+}
+
+#table{
+    font-size: 20px;
+    margin: auto;
+ }
+
+
+@media (max-width:600px){
+    #table{
+        flex-direction: column;
+        width: 400px;}
+}
+
+@media (min-width:601px) and (max-width:768px){
+    #table{flex-direction: warp;
+        flex-wrap: wrap;
+        width:400px;
+    }
+}
+
+@media (min-width:769px) and (max-width:992px){
+    #table{
+        flex-wrap: wrap;
+        width:400px;
+    }
+}
+
+@media (min-width:993) and (max-width:1200){
+    #table{
+        flex-wrap: wrap;
+        width: 600px;
+    }
+}
+
+@media (max-width:600px){
+    #table{
+        flex-direction: column;
+        width: 400px;}
+}
+
+@media (min-width:601px) and (max-width:768px){
+    #table{flex-direction: warp;
+        flex-wrap: wrap;
+        width:430px;
+    }
+}
+
+@media (min-width:769px) and (max-width:992px){
+    #table{
+        flex-wrap: wrap;
+        width:430px;
+    }
+}
+
+@media (min-width:993px) and (max-width:1200px){
+    #table{
+        flex-wrap: wrap;
+        width: 600px;
+    }
+}
+@media (max-width:600px){
+    #service-card{
+        flex-direction: column;
+        width: 98%;}
+}
+@media (min-width:601px) and (max-width:768px){
+    #service-card{flex-direction: warp;
+        flex-wrap: wrap;
+        width: 98%;
+    }
+}
+@media (min-width:769px) and (max-width:992px){
+    #service-card{
+        flex-wrap: wrap;
+        width: 98%;
+    }
+}
+@media (min-width:993px) and (max-width:1200px){
+    #service-card{
+        flex-wrap: wrap;
+        width: 98%;}
+    }
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-icon {
+    background-color: #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu-icon:hover {
+    background-color: #111;
+}
+
+.menu-icon span {
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 15px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-item:hover {
+    background-color: #111;
+    border-radius: 4px;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.sidebar a {
+    padding: 15px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #111;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width:621px){
+    .nav-links{
+        display: none;
+    }
+}
+
+.nav-item a{
+   margin-right: -10px;
+}
+

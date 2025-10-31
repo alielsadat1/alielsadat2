@@ -1,0 +1,67 @@
+body{
+    background-color: #333;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.About{
+    font-size: 25px;
+    line-height: 50px;
+    
+}
+#About-sarvice{
+    font-size: 28px;
+}
+label{
+    font-size: 32px;
+}
+.email ,.instagram , .tiktok{
+    font-size: 26px;
+    text-decoration: none;
+    line-height: 50px;
+   
+    
+}
+a[href *=a]{
+    color: red;
+}
+a[href *=o]{
+    color: red;
+}
+#Follow{
+    font-size: 50px;
+}
+#menu{
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+     margin-top: -9px;
+    margin-left: -9px;
+    margin-right: -9px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    display: flex;
+    z-index: 1;
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav-item{
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 7px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+.nav-item:hover{
+    background-color: #333;
+    border-radius: 8px;
+    margin-bottom: 3px;
+    margin-top: 7.2px;
+}

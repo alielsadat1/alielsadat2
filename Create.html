@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+<body>
+   
+    <style>
+   
+   #passwword{
+    margin-left: -29px;
+}
+ #email ,#password , #name{
+    background-color:rgba(255, 255, 255, 0);
+    margin-top: 20px;
+   border-radius: 5px;
+   height: 20px;
+   border-bottom: 5;
+   
+ }
+
+ input{
+    border: 3;
+    border-color: rgba(255, 255, 255, 0.418);
+    width: 95%;
+    height: 80px;
+    margin: 0;
+    margin-bottom: 20px;
+
+ }
+#email , #password ,#name{
+    height: 30px;
+    
+ }
+ button{
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    font-size: 17px;
+    margin-left: 6px;
+    
+}
+@media (max-width:360px){
+    .container{
+        width: 100%;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+.container {
+       text-align: center;
+        width: 390px;
+        height: 425px;
+        color: white;
+        background-color: #333;
+        border-color: black;
+        border-radius: 20px;
+        box-shadow: 3px 3px 30px #111;
+        border-radius: 20px;
+         }
+         .container:hover{
+            transform: scale(1.1);
+         
+}
+
+.error {
+    border: 1px solid red;
+    background-color: #ffe6e6;
+    
+}
+
+.error-message {
+    color: red;
+    display: none;
+}
+
+p{
+    margin-top: 0px;
+    margin-bottom: 2px;
+    width: 100%;
+    margin-bottom: 0px;
+
+   
+}
+
+    </style>
+
+<div class="container">
+    <h2>Sign in</h2>
+    <input type="text" id="name" placeholder="name" oninput="validateFields()">
+
+    <p class="error-message" id="name-error">يجب إدخال الاسم</p>
+
+    <input type="email" id="email" placeholder="email" oninput="validateFields()">
+
+    <p class="error-message" id="email-error">البريد الإلكتروني غير صحيح</p>
+
+    <input type="password" id="password" placeholder="password" oninput="validateFields()">
+
+    <p class="error-message" id="password-error">كلمة المرور يجب أن تكون أكثر من 6 أحرف</p>
+
+    <a href="index.html">Sign in</a>
+
+    <button onclick="validateForm()">Sign in</button>
+
+</div>
+
+<script>
+        function validateFields() {
+            let name = document.getElementById('name');
+            let email = document.getElementById('email');
+            let password = document.getElementById('password');
+            let nameError = document.getElementById('name-error');
+            let emailError = document.getElementById('email-error');
+            let passwordError = document.getElementById('password-error');
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (name.value.trim() === "") {
+                name.classList.add('error');
+                nameError.style.display = 'block';
+            } else {
+                name.classList.remove('error');
+                nameError.style.display = 'none';
+            }
+
+            if (!emailPattern.test(email.value)) {
+                email.classList.add('error');
+                emailError.style.display = 'block';
+            } else {
+                email.classList.remove('error');
+                emailError.style.display = 'none';
+            }
+
+            if (password.value.length <= 6) {
+                password.classList.add('error');
+                passwordError.style.display = 'block';
+            } else {
+                password.classList.remove('error');
+                passwordError.style.display = 'none';
+            }
+        }
+
+        function validateForm() {
+            validateFields();
+            let name = document.getElementById('name');
+            let email = document.getElementById('email');
+            let password = document.getElementById('password');
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (name.value.trim() !== "" && emailPattern.test(email.value) && password.value.length > 6) {
+                window.location.href = "Buy.html";
+            }
+        }
+</script>
+
+
+</body>
+</html>
